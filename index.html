@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name = "viewport" content ="width=device-width,initial-scale=1">
         <link rel = "stylesheet" href="style.css">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
         <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel = "stylesheet" crossorigin = "anonymous">
         <title>CSY</title>
     </head>
@@ -16,44 +17,68 @@
         <h2>
             <div class="p-3 mb-2 bg-success text-white fs-4"><strong>Personal Information</strong></div>
         </h2>
-            <h3 class = "fs-5">
-                <img src = "photo.png" width = "210" height = "270"/>
-                <ul class = "fs-6">
-                    <li>Name: Sungyun Choi</li>
-                    <li>Github account: GitCSY</li>
-                    <li>E-mail: bchoice@skku.edu</li>
-                    <li>Hobby: Watching Movies and Dramas</li>
-                </ul>
-            </h3>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img src= "photo.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <p class="card-text">
+                        <ul class = "fs-6">
+                            <li>Name: Sungyun Choi</li>
+                            <li>Github account: GitCSY</li>
+                            <li>E-mail: bchoice@skku.edu</li>
+                            <li>Hobby: Watching Movies and Dramas</li>
+                        </ul> 
+                    </p>
+                    </div>
+                </div>
+                </div>
+            </div>
         <h2>
             <div class="p-3 mb-2 bg-success text-white fs-4"><strong>Websites I use most</strong></div>
         </h2>
             <h3 class = "fs-6">
                 <ol class = "bg-light">
-                    <li><a href = "https://www.google.com">Google</a></li>
+                    <li><a href = "https://www.google.com">Google <i class = "bi bi-google"></i></a></li>
                     <li><a href = "https://www.skku.edu">SKKU</a></li>
-                    <li><a href = "https://www.github.com">Github</a></li>
+                    <li><a href = "https://www.github.com">Github <i class = "bi bi-github"></i></a></li>
                 </ol>
             </h3>
         <h2>
-            <div class="p-3 mb-2 bg-success text-white fs-4"><strong>Some Classes that I Attend</strong></div>
+            <div class="p-3 mb-2 bg-success text-white fs-4"><strong>Lectures that I Attend</strong></div>
         </h2>
-        <table>
-                <tr align ="center">
-                    <td>Mon</td>
-                    <td>Tue</td>
-                    <td>Wed</td>
-                    <td>Thr</td>
-                    <td>Fri</td>
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Day of the Week</th>
+                    <th scope="col">Lecture Name</th>
                 </tr>
-                <tr align = "center">
-                    <td>CA</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Monday</th>
+                    <td>Computer Architecture</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tuesday</th>
                     <td>OSSP</td>
-                    <td>CA</td>
-                    <td>CPE</td>
-                    <td>CT</td>
                 </tr>
-        </table>
+                <tr>
+                    <th scope="row">Wednesday</th>
+                    <td>Computer Architecture</td>
+                </tr>
+                <tr>
+                    <th scope="row">Thursday</th>
+                    <td>Computer Programming</td>
+                </tr>
+                <tr>
+                    <th scope="row">Friday</th>
+                    <td>Creative Thinking</td>
+                </tr>
+            </tbody>
+          </table>
         </div>
     </body>
  </html>
